@@ -29,7 +29,7 @@ def save_to_excel(phrases, filename="output_phrases.xlsx"):
 # Main
 def main():
     # Số lượng cụm từ muốn tạo
-    num_phrases = 1  # Có thể thay đổi
+    num_phrases = 1  # Có thể yêu cầu nhiều lần tuy nhiên chỉnh prompt sẽ tiết kiệm lượt gọi API hơn
     phrases = []
 
     # Tạo các cụm từ

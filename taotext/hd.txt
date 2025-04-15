@@ -2,6 +2,8 @@ Cài python:
 
 https://www.python.org/downloads/
 
+API google lấy tại: https://aistudio.google.com/apikey
+
 Cập nhật thư viện
 
 pip install google-generativeai pandas openpyxl
