@@ -3,13 +3,13 @@ import pandas as pd
 import os
 
 # Cấu hình API key (thay YOUR_API_KEY bằng key của bạn)
-API_KEY = "YOUR_API_KEY"
+API_KEY = "Nhập_API_Key"
 genai.configure(api_key=API_KEY)
 
 # Hàm tạo cụm từ/câu tiếng Anh ngẫu nhiên
 def generate_random_phrase():
-    model = genai.GenerativeModel("gemini-1.5-flash")
-    prompt = "Generate a random, meaningful English phrase or sentence (3-10 words). Make it unique and avoid repetition."
+    model = genai.GenerativeModel("gemini-2.0-flash")
+    prompt = "Tạo 1 nhiều cụm từ hoặc câu tiếng anh có nghĩa khoảng 100 cụm từ, chỉ trả về cụm từ không trả về bất cứ mô tả nào khác"
     response = model.generate_content(prompt)
     return response.text.strip()
 
@@ -29,7 +29,7 @@ def save_to_excel(phrases, filename="output_phrases.xlsx"):
 # Main
 def main():
     # Số lượng cụm từ muốn tạo
-    num_phrases = 5  # Có thể thay đổi
+    num_phrases = 1  # Có thể thay đổi
     phrases = []
 
     # Tạo các cụm từ

@@ -1,0 +1,15 @@
+Cài python:
+
+https://www.python.org/downloads/
+
+Cập nhật thư viện
+
+pip install google-generativeai pandas openpyxl
+
+Tải start.py
+
+Chạy:
+
+py start.py
+
+Thay Prompt cho phù hợp hơn
